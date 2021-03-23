@@ -19,17 +19,20 @@
       <a href="#">Contact</a>
     </div>
     <Landing></Landing>
+    <About></About>
   </div>
 </template>
 
 <script>
 //import HelloWorld from "./components/HelloWorld.vue";
-import Landing from "./components/Landing.vue";
+import Landing from "./components/Landing";
+import About from "./components/About";
 
 export default {
   name: "App",
   components: {
     Landing,
+    About,
   },
   methods: {
     ToggleNav: function() {
