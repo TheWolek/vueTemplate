@@ -1,9 +1,9 @@
-<template>
+<template lang="pl">
   <div id="app">
     <div id="nav">
       <a href="#nav">Home</a>
       <a href="#about">About</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
     <div class="nav-mobile-container">
       <div class="nav-bar-mobile">
@@ -17,11 +17,12 @@
       <div id="nav-mobile">
         <a href="#nav" @click="animateScroll('nav')">Home</a>
         <a href="#about" @click="animateScroll('about')">About</a>
-        <a href="#">Contact</a>
+        <a href="#contact" @click="animateScroll('contact')">Contact</a>
       </div>
     </div>
     <Landing></Landing>
     <About></About>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -29,6 +30,7 @@
 //import HelloWorld from "./components/HelloWorld.vue";
 import Landing from "./components/Landing";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import $ from "jquery";
 
 export default {
@@ -36,6 +38,7 @@ export default {
   components: {
     Landing,
     About,
+    Contact,
   },
   methods: {
     ToggleNav: function() {
