@@ -5,7 +5,7 @@
       <a href="#about">About</a>
       <a href="#">Contact</a>
     </div>
-    <div>
+    <div class="nav-mobile-container">
       <div class="nav-bar-mobile">
         <img src="./assets/logo.png" />
         <div id="hamburger" @click="ToggleNav">
@@ -83,6 +83,14 @@ body {
   color: $font-dark;
 }
 
+.nav-mobile-container {
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  left: 0;
+}
+
 #nav-mobile {
   position: absolute;
   top: -200px;
@@ -120,7 +128,7 @@ body {
   position: relative;
   padding: 0 0.5em;
   width: 100%;
-  height: 8vh;
+  height: 100%;
   z-index: 100;
   background: white;
   display: flex;
