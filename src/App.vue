@@ -5,18 +5,20 @@
       <a href="#about">About</a>
       <a href="#">Contact</a>
     </div>
-    <div class="nav-bar-mobile">
-      <img src="./assets/logo.png" />
-      <div id="hamburger" @click="ToggleNav">
-        <span id="1"></span>
-        <span id="2"></span>
-        <span id="3"></span>
+    <div>
+      <div class="nav-bar-mobile">
+        <img src="./assets/logo.png" />
+        <div id="hamburger" @click="ToggleNav">
+          <span id="1"></span>
+          <span id="2"></span>
+          <span id="3"></span>
+        </div>
       </div>
-    </div>
-    <div id="nav-mobile">
-      <a href="#nav" @click="animateScroll('nav')">Home</a>
-      <a href="#about" @click="animateScroll('about')">About</a>
-      <a href="#">Contact</a>
+      <div id="nav-mobile">
+        <a href="#nav" @click="animateScroll('nav')">Home</a>
+        <a href="#about" @click="animateScroll('about')">About</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
     <Landing></Landing>
     <About></About>
@@ -38,16 +40,9 @@ export default {
   methods: {
     ToggleNav: function() {
       $("#nav-mobile").toggleClass("nav-mobile-active");
-      // document
-      //   .getElementById("nav-mobile")
-      //   .classList.toggle("nav-mobile-active");
-
       $("#1").toggleClass("ham-1");
       $("#2").toggleClass("ham-2");
       $("#3").toggleClass("ham-3");
-      // document.getElementById("1").classList.toggle("ham-1");
-      // document.getElementById("2").classList.toggle("ham-2");
-      // document.getElementById("3").classList.toggle("ham-3");
     },
 
     animateScroll: function(el) {
