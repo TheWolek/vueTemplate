@@ -103,7 +103,7 @@ body {
   border-bottom: 2px solid $font-dark;
   border-top: 2px solid $font-dark;
   background: #f8f8f8;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.6s ease;
 
   a {
     padding: 20px;
