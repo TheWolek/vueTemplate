@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#nav">Home</a>
+      <a href="#about">About</a>
       <a href="#">Contact</a>
     </div>
     <div class="nav-bar-mobile">
@@ -14,8 +14,8 @@
       </div>
     </div>
     <div id="nav-mobile">
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#nav" @click="animateScroll('nav')">Home</a>
+      <a href="#about" @click="animateScroll('about')">About</a>
       <a href="#">Contact</a>
     </div>
     <Landing></Landing>
@@ -27,6 +27,7 @@
 //import HelloWorld from "./components/HelloWorld.vue";
 import Landing from "./components/Landing";
 import About from "./components/About";
+import $ from "jquery";
 
 export default {
   name: "App",
@@ -36,13 +37,30 @@ export default {
   },
   methods: {
     ToggleNav: function() {
-      document
-        .getElementById("nav-mobile")
-        .classList.toggle("nav-mobile-active");
+      $("#nav-mobile").toggleClass("nav-mobile-active");
+      // document
+      //   .getElementById("nav-mobile")
+      //   .classList.toggle("nav-mobile-active");
 
-      document.getElementById("1").classList.toggle("ham-1");
-      document.getElementById("2").classList.toggle("ham-2");
-      document.getElementById("3").classList.toggle("ham-3");
+      $("#1").toggleClass("ham-1");
+      $("#2").toggleClass("ham-2");
+      $("#3").toggleClass("ham-3");
+      // document.getElementById("1").classList.toggle("ham-1");
+      // document.getElementById("2").classList.toggle("ham-2");
+      // document.getElementById("3").classList.toggle("ham-3");
+    },
+
+    animateScroll: function(el) {
+      $("html, body").animate(
+        {
+          scrollTop: $("#" + el).offset().top,
+        },
+        1000
+      );
+      $("#nav-mobile").toggleClass("nav-mobile-active");
+      $("#1").toggleClass("ham-1");
+      $("#2").toggleClass("ham-2");
+      $("#3").toggleClass("ham-3");
     },
   },
 };
