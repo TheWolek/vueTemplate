@@ -42,4 +42,22 @@ export default {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    header {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      h1 + * {
+        margin-top: 0.5em;
+      }
+    }
+  }
+}
 </style>
