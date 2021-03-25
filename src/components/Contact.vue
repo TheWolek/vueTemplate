@@ -51,4 +51,17 @@ address {
     margin-top: 0.2em;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 8em 1.2em 2em 1.2em;
+  }
+
+  address {
+    font-size: 105%;
+    p {
+      font-size: 132%;
+    }
+  }
+}
 </style>
