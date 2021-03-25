@@ -18,4 +18,10 @@ footer {
   background: rgb(50, 115, 145);
   color: black;
 }
+
+@media screen and (min-width: 768px) {
+  footer {
+    font-size: 110%;
+  }
+}
 </style>
