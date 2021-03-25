@@ -60,4 +60,20 @@ export default {
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    background-position-y: 50%;
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 20vh;
+
+      h1 + * {
+        margin-top: 1em;
+      }
+    }
+  }
+}
 </style>
