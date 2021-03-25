@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="contact">
+  <section class="container" id="contact">
     <div class="mapContainer">
       <iframe
         width="600"
@@ -17,7 +17,7 @@
         <p>mail@example.com</p>
       </address>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {
