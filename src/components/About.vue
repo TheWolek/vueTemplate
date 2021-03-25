@@ -36,9 +36,27 @@ export default {
       background-repeat: no-repeat;
     }
 
-    .card-txt {
+    .card-text {
       width: 100%;
       background: rgba(0, 0, 0, 0.1);
+      padding: 0.5em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    font-size: 120%;
+    padding-top: 10em;
+
+    .card {
+      .card-img {
+        height: 100%;
+      }
+
+      .card-text {
+        margin-top: 1em;
+      }
     }
   }
 }
