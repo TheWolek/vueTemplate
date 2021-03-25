@@ -23,6 +23,7 @@
     <Landing></Landing>
     <About></About>
     <Contact></Contact>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -31,6 +32,7 @@
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import $ from "jquery";
 
 export default {
@@ -39,6 +41,7 @@ export default {
     Landing,
     About,
     Contact,
+    Footer,
   },
   methods: {
     ToggleNav: function() {
