@@ -1,8 +1,11 @@
 <template>
   <div class="wrap">
     <div class="conatiner">
-      <h1>Witej</h1>
-      <h4>cho se dupniemy remont xd</h4>
+      <h1>Remont?</h1>
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        reprehenderit veritatis consectetur
+      </h4>
     </div>
   </div>
 </template>
