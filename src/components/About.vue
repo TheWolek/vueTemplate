@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="about">
-    <div class="card">
+    <section class="card">
       <div class="card-img"></div>
       <div class="card-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam at
@@ -8,7 +8,7 @@
         quis cum quos incidunt corrupti pariatur, temporibus sunt odio excepturi
         alias!
       </div>
-    </div>
+    </section>
   </div>
 </template>
 <script>
