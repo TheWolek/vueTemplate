@@ -230,4 +230,17 @@ body {
     display: none;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #nav {
+    height: 9vh;
+    padding: 0.6em 1.5em 0.6em 1.5em;
+    .links {
+      width: 40%;
+      a {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
 </style>
