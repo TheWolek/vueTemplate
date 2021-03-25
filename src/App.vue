@@ -1,9 +1,12 @@
 <template lang="pl">
   <div id="app">
     <div id="nav">
-      <a href="#nav">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <img src="./assets/logo.png" />
+      <div class="links">
+        <a href="#landing" @click="animateScroll('landing')">Home</a>
+        <a href="#about" @click="animateScroll('about')">About</a>
+        <a href="#contact" @click="animateScroll('contact')">Contact</a>
+      </div>
     </div>
     <div class="nav-mobile-container">
       <div class="nav-bar-mobile">
@@ -182,7 +185,15 @@ body {
 
 #nav {
   display: none;
-  padding: 30px;
+  position: fixed;
+  padding: 0.6em 1em;
+  width: 100%;
+  height: 10vh;
+  z-index: 100;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $font-dark;
 
   a {
     font-weight: bold;
@@ -191,6 +202,32 @@ body {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #nav {
+    display: flex;
+
+    img {
+      height: 100%;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+
+      a {
+        display: block;
+        font-size: 1.25rem;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-mobile-container {
+    display: none;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap" id="landing">
     <header>
       <h1>Remont?</h1>
       <h4>
