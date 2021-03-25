@@ -1,12 +1,12 @@
 <template>
   <div class="wrap">
-    <div class="conatiner">
+    <header>
       <h1>Remont?</h1>
       <h4>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
         reprehenderit veritatis consectetur
       </h4>
-    </div>
+    </header>
   </div>
 </template>
 <script>
@@ -28,7 +28,7 @@ export default {
   background-repeat: no-repeat;
   background-position-x: 65%;
 
-  .conatiner {
+  header {
     color: white;
     width: 100%;
     padding: 0.7em;
