@@ -235,6 +235,10 @@ body {
   #nav {
     height: 9vh;
     padding: 0.6em 1.5em 0.6em 1.5em;
+
+    img {
+      margin-left: 1em;
+    }
     .links {
       width: 40%;
       a {
