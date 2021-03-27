@@ -2,6 +2,9 @@
   <div class="container" id="about">
     <section class="card">
       <div class="card-img"></div>
+      <img
+        src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
+      />
       <div class="card-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam at
         assumenda modi fugiat nobis iste inventore possimus consequatur illo
@@ -26,6 +29,10 @@ export default {
   .card {
     width: 100%;
     height: 500px;
+
+    img {
+      display: none;
+    }
 
     .card-img {
       width: 90%;
@@ -56,6 +63,26 @@ export default {
 
       .card-text {
         margin-top: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    .card {
+      height: 100%;
+      width: 70%;
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 60%;
+      }
+      .card-img {
+        display: none;
       }
     }
   }
