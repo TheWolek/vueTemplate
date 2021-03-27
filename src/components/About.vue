@@ -84,6 +84,10 @@ export default {
       .card-img {
         display: none;
       }
+      .card-text {
+        width: 70%;
+        margin: 1em auto;
+      }
     }
   }
 }
