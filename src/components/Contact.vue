@@ -64,4 +64,35 @@ address {
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+
+    .mapContainer {
+      width: 50%;
+      order: 2;
+      box-shadow: 2px 5px 9px 1px rgba(0, 0, 0, 0.64);
+    }
+
+    .textContainer {
+      width: 20%;
+      height: 65vh;
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.4);
+      color: rgb(243, 243, 243);
+      order: 1;
+      text-align: left;
+      font-size: 100%;
+      padding-left: 2em;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      box-shadow: -1px 5px 9px 1px rgba(0, 0, 0, 0.64);
+    }
+  }
+}
 </style>
