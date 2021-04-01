@@ -59,13 +59,18 @@ export default {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 8em 1.2em 2em 1.2em;
-  }
+    grid-template-columns: 4% [center] 1fr 4%;
+    gap: 0;
+    row-gap: 1em;
 
-  address {
-    font-size: 105%;
-    p {
-      font-size: 132%;
+    .mapContainer {
+      grid-column: center;
+      grid-row: 1;
+    }
+
+    .textContainer {
+      grid-column: center;
+      grid-row: 2;
     }
   }
 }
