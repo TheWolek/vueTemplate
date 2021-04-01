@@ -61,9 +61,12 @@ export default {
 
 @media screen and (min-width: 768px) {
   .container {
+    grid-template-columns: 5% [center] 1fr [center_end] 5%;
     .card {
       padding-top: 2em;
       padding-bottom: 1.5em;
+      grid-column: center;
+
       img {
         max-width: 80%;
       }
@@ -77,23 +80,21 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .container {
-    height: 1000px;
-    display: flex;
-    justify-content: center;
+    grid-template-columns: 8% [left] 1fr [right] 1fr 8%;
+    gap: 0;
+    padding-bottom: 9em;
     .card {
-      height: 100%;
-      width: 70%;
-      img {
-        display: block;
-        margin: 0 auto;
-        height: 60%;
+      width: 90%;
+      grid-column: left;
+
+      &:nth-child(2) {
+        grid-column: right;
       }
-      .card-img {
-        display: none;
+
+      img {
+        max-width: 85%;
       }
       .card-text {
-        width: 70%;
-        margin: 1em auto;
       }
     }
   }
