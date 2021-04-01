@@ -77,31 +77,30 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 4em;
-
+    grid-template-rows: 1fr;
+    grid-template-columns: 7% [left] 1fr [right] 4fr 10%;
+    gap: 0;
+    // column-gap: 1em;
+    padding: 3em 2rem;
     .mapContainer {
-      width: 50%;
-      order: 2;
-      box-shadow: 2px 5px 9px 1px rgba(0, 0, 0, 0.64);
+      grid-column: right;
+      grid-row: 1;
+      padding: 1em;
     }
 
     .textContainer {
-      width: 20%;
-      height: 65vh;
-      display: flex;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.4);
-      color: rgb(243, 243, 243);
-      order: 1;
-      text-align: left;
-      font-size: 100%;
-      padding-left: 2em;
-      border-top-left-radius: 25px;
-      border-bottom-left-radius: 25px;
-      box-shadow: -1px 5px 9px 1px rgba(0, 0, 0, 0.64);
+      grid-column: left;
+      grid-row: 1;
+      display: grid;
+      justify-items: right;
+      align-content: center;
+      padding-right: 1em;
+      // box-shadow: -1px 5px 9px 1px rgba(0, 0, 0, 0.64);
+
+      address {
+        text-align: right;
+        font-weight: bold;
+      }
     }
   }
 }
