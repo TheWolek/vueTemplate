@@ -61,16 +61,15 @@ export default {
 
 @media screen and (min-width: 768px) {
   .container {
-    font-size: 120%;
-    padding-top: 10em;
-
     .card {
-      .card-img {
-        height: 100%;
+      padding-top: 2em;
+      padding-bottom: 1.5em;
+      img {
+        max-width: 80%;
       }
 
       .card-text {
-        margin-top: 1em;
+        max-width: 90%;
       }
     }
   }
