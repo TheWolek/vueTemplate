@@ -10,11 +10,17 @@
     </div>
     <div class="textContainer">
       <address>
-        <p>Remont</p>
-        <p>Krótka 12</p>
-        <p>42-202 Częstochowa</p>
-        <p>Tel. 696911299</p>
-        <p>mail@example.com</p>
+        <div class="name">
+          <p>Remont</p>
+        </div>
+        <div class="addr">
+          <p>Krótka 12</p>
+          <p>42-202 Częstochowa</p>
+        </div>
+        <div class="TelMail">
+          <p>Tel. 696911299</p>
+          <p>mail@example.com</p>
+        </div>
       </address>
     </div>
   </section>
@@ -100,6 +106,9 @@ export default {
       address {
         text-align: right;
         font-weight: bold;
+        display: grid;
+        height: 200px;
+        grid-template-rows: 20% 40% 40%;
       }
     }
   }
