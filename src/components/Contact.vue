@@ -27,28 +27,33 @@ export default {
 <style lang="scss" scoped>
 .container {
   width: 100%;
+  height: 650px;
   background: lightblue;
   padding: 5em 1em 2em 1em;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  gap: 1em;
 
   .mapContainer {
     width: 100%;
-    height: 65vh;
+    // height: 65vh;
 
     iframe {
       width: 100%;
       height: 100%;
     }
   }
-}
 
-address {
-  padding-top: 1em;
-  p {
-    font-style: normal;
-    font-size: 1.2rem;
-  }
-  p + p {
-    margin-top: 0.2em;
+  .textContainer {
+    address {
+      p {
+        font-style: normal;
+        font-size: 1.2rem;
+      }
+      p + p {
+        margin-top: 0.2em;
+      }
+    }
   }
 }
 
