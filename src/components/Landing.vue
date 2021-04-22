@@ -28,7 +28,6 @@ export default {
   background-repeat: no-repeat;
   background-position-x: 65%;
   padding: 0;
-  margin-top: 8vh;
 
   header {
     color: white;
