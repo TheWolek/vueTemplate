@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="about">
+  <div class="container col-12" id="about">
     <section class="card">
       <img
         src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
@@ -31,15 +31,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .container {
-  width: 100%;
   background: lightgray;
-  padding: 10em 1em 5em 1em;
+  padding: 10em 0.7em;
   display: grid;
   place-items: center;
   gap: 3em;
 
   .card {
-    width: 100%;
     display: grid;
     place-items: center;
     gap: 0.5em;
@@ -93,8 +91,6 @@ export default {
 
       img {
         max-width: 85%;
-      }
-      .card-text {
       }
     }
   }

@@ -17,6 +17,10 @@ footer {
   padding: 0.7em;
   background: rgb(50, 115, 145);
   color: black;
+
+  p {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="landing">
+  <div class="container col-12" id="landing">
     <header>
       <h1>Remont?</h1>
       <h4>
@@ -28,6 +28,7 @@ export default {
   background-repeat: no-repeat;
   background-position-x: 65%;
   padding: 0;
+  margin-top: 8vh;
 
   header {
     color: white;

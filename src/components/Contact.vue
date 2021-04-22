@@ -1,5 +1,5 @@
 <template>
-  <section class="container" id="contact">
+  <section class="container col-12" id="contact">
     <div class="mapContainer">
       <iframe
         width="600"
@@ -26,7 +26,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .container {
-  width: 100%;
   height: 650px;
   background: lightblue;
   padding: 5em 1em 2em 1em;
@@ -36,7 +35,6 @@ export default {
 
   .mapContainer {
     width: 100%;
-    // height: 65vh;
 
     iframe {
       width: 100%;
@@ -48,7 +46,8 @@ export default {
     address {
       p {
         font-style: normal;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
+        margin-bottom: 0;
       }
       p + p {
         margin-top: 0.2em;
