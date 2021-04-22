@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap" id="landing">
+  <div class="container" id="landing">
     <header>
       <h1>Remont?</h1>
       <h4>
@@ -15,8 +15,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.wrap {
-  width: 100%;
+.container {
+  // width: 100%;
   height: 80vh;
   background: lightgray;
   display: flex;
@@ -27,6 +27,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 65%;
+  padding: 0;
 
   header {
     color: white;
@@ -39,6 +40,10 @@ export default {
     }
     h1 + * {
       margin-top: 0.4em;
+    }
+
+    h4 {
+      font-size: 1.2rem;
     }
   }
 }
