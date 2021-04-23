@@ -38,6 +38,7 @@ export default {
 
   .mapContainer {
     width: 100%;
+    padding: 0;
 
     iframe {
       width: 100%;
