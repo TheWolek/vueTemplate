@@ -1,5 +1,5 @@
 <template>
-  <div class="container col-12" id="about">
+  <div class="container col-12 col-sm-12 col-md-12" id="about">
     <section class="card">
       <img
         src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
@@ -71,6 +71,7 @@ export default {
 
       .card-text {
         max-width: 90%;
+        font-size: 1.22rem;
       }
     }
   }
