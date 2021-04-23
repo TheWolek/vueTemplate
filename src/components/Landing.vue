@@ -1,6 +1,9 @@
 <template>
-  <div class="container col-12" id="landing">
-    <header>
+  <div
+    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+    id="landing"
+  >
+    <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <h1>Remont?</h1>
       <h4>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -31,7 +34,7 @@ export default {
 
   header {
     color: white;
-    width: 100%;
+    // width: 100%;
     padding: 0.7em;
     background: rgba(0, 0, 0, 0.4);
 
@@ -48,15 +51,16 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .wrap {
+@media (min-width: 768px) {
+  .container {
     header {
+      padding: 3em;
       h1 {
         font-size: 3rem;
       }
 
       h4 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
 
       h1 + * {

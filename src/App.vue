@@ -98,6 +98,7 @@ body {
   height: 8vh;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 #nav-mobile {
