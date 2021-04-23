@@ -4,9 +4,11 @@
     id="about"
   >
     <section class="card">
-      <img
-        src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
-      />
+      <div class="card-img">
+        <img
+          src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
+        />
+      </div>
       <div class="card-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam at
         assumenda modi fugiat nobis iste inventore possimus consequatur illo
@@ -15,9 +17,11 @@
       </div>
     </section>
     <section class="card">
-      <img
-        src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
-      />
+      <div class="card-img">
+        <img
+          src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
+        />
+      </div>
       <div class="card-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam at
         assumenda modi fugiat nobis iste inventore possimus consequatur illo
@@ -48,9 +52,14 @@ export default {
     border-radius: 3px;
     padding: 0.7em;
 
-    img {
+    .card-img {
       max-width: 90%;
       border-radius: 5px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
 
     .card-text {
@@ -68,8 +77,13 @@ export default {
       padding-bottom: 1.5em;
       grid-column: center;
 
-      img {
+      .card-img {
         max-width: 80%;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
       }
 
       .card-text {
@@ -94,8 +108,19 @@ export default {
         grid-column: right;
       }
 
-      img {
+      .card-img {
         max-width: 85%;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
