@@ -71,8 +71,10 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
-  .wrap {
-    background-position-y: 50%;
+  .container {
+    background-position-y: center;
+    background-size: contain;
+    background-attachment: fixed;
     header {
       display: flex;
       flex-direction: column;

@@ -1,5 +1,8 @@
 <template>
-  <div class="container col-12 col-sm-12 col-md-12" id="about">
+  <div
+    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+    id="about"
+  >
     <section class="card">
       <img
         src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0003/20/remont-mieszkania.jpeg"
@@ -81,9 +84,10 @@ export default {
   .container {
     grid-template-columns: 8% [left] 1fr [right] 1fr 8%;
     gap: 0;
-    padding-bottom: 9em;
+    padding-bottom: 13em;
+    padding-top: 13em;
     .card {
-      width: 90%;
+      width: 70%;
       grid-column: left;
 
       &:nth-child(2) {

@@ -235,7 +235,7 @@ body {
 @media screen and (min-width: 1024px) {
   #nav {
     height: 9vh;
-    padding: 0.6em 1.5em 0.6em 1.5em;
+    padding: 0.6em 10em 0.6em 10em;
 
     img {
       margin-left: 1em;

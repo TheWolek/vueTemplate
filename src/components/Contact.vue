@@ -1,5 +1,8 @@
 <template>
-  <section class="container col-12 col-sm-12 col-md-12" id="contact">
+  <section
+    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+    id="contact"
+  >
     <div class="mapContainer col-12 col-sm-12 col-md-12">
       <iframe
         width="600"
@@ -79,7 +82,7 @@ export default {
 @media screen and (min-width: 1024px) {
   .container {
     grid-template-rows: 1fr;
-    grid-template-columns: 7% [left] 1fr [right] 4fr 10%;
+    grid-template-columns: 7% [left] 1fr [right] 2fr 10%;
     gap: 0;
     // column-gap: 1em;
     padding: 3em 2rem;
@@ -101,6 +104,10 @@ export default {
       address {
         text-align: right;
         font-weight: bold;
+
+        p {
+          font-size: 1.24rem;
+        }
       }
     }
   }
