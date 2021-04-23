@@ -1,6 +1,6 @@
 <template>
-  <section class="container col-12" id="contact">
-    <div class="mapContainer">
+  <section class="container col-12 col-sm-12 col-md-12" id="contact">
+    <div class="mapContainer col-12 col-sm-12 col-md-12">
       <iframe
         width="600"
         style="border:0"
@@ -8,7 +8,7 @@
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgQYZJXe2EEcREHmn1biW3Qw&zoom=14&key=AIzaSyA9DxaysegfoYFJUGnZixWWE09_L-7wg_0"
       ></iframe>
     </div>
-    <div class="textContainer">
+    <div class="textContainer col-12 col-sm-12 col-md-12">
       <address>
         <p>Remont</p>
         <p>Krótka 12</p>
@@ -65,11 +65,13 @@ export default {
     .mapContainer {
       grid-column: center;
       grid-row: 1;
+      padding: 0;
     }
 
     .textContainer {
       grid-column: center;
       grid-row: 2;
+      padding: 0;
     }
   }
 }
