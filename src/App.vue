@@ -72,6 +72,7 @@ export default {
 
 <style lang="scss">
 $font-dark: #2c3e50;
+$font-light: #f8f8f8;
 
 * {
   margin: 0;
@@ -86,8 +87,6 @@ body {
 
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $font-dark;
 }
@@ -112,17 +111,13 @@ body {
   justify-content: center;
   border-bottom: 2px solid $font-dark;
   border-top: 2px solid $font-dark;
-  background: #f8f8f8;
+  background: $font-light;
   transition: all 0.6s ease;
 
   a {
     padding: 20px;
     font-weight: bold;
     color: $font-dark;
-
-    // &.router-link-exact-active {
-    //   color: #42b983;
-    // }
   }
 
   a + a {
@@ -199,10 +194,6 @@ body {
   a {
     font-weight: bold;
     color: $font-dark;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
 }
 
@@ -217,7 +208,7 @@ body {
     .links {
       display: flex;
       justify-content: space-around;
-      width: 50%;
+      width: clamp(450px, 50%, 700px);
 
       a {
         display: block;
@@ -241,7 +232,7 @@ body {
       margin-left: 1em;
     }
     .links {
-      width: 40%;
+      // width: 40%;
       a {
         font-size: 1.1rem;
       }
