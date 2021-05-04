@@ -18,6 +18,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "/styles/common.scss";
+
 .container {
   // width: 100%;
   height: 80vh;
@@ -25,7 +27,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(180, 180, 180);
+  // color: rgb(180, 180, 180);
+  color: $font-light;
   background-image: url("https://alebank.pl/wp-content/uploads/2019/10/remont-mieszkanie-malowanie.jpg");
   background-size: cover;
   background-repeat: no-repeat;

@@ -71,8 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-$font-dark: #2c3e50;
-$font-light: #f8f8f8;
+@import "/components/styles/common.scss";
 
 * {
   margin: 0;
