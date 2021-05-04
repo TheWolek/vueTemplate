@@ -26,7 +26,7 @@
     <Landing></Landing>
     <About></About>
     <Contact></Contact>
-    <Footer></Footer>
+    <Foter></Foter>
   </div>
 </template>
 
@@ -35,7 +35,7 @@
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Foter from "./components/Foter";
 import $ from "jquery";
 
 export default {
@@ -44,7 +44,7 @@ export default {
     Landing,
     About,
     Contact,
-    Footer,
+    Foter,
   },
   methods: {
     ToggleNav: function() {
@@ -82,6 +82,7 @@ export default {
 body {
   position: relative;
   overflow-x: hidden;
+  background: $bg-main;
 }
 
 #app {

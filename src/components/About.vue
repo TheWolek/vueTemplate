@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+    class="container col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
     id="about"
   >
     <section class="card">
@@ -37,8 +37,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "/styles/common.scss";
+
 .container {
-  background: lightgray;
+  // background: $bg-light;
   padding: 10em 0.7em;
   display: grid;
   place-items: center;
@@ -48,7 +50,7 @@ export default {
     display: grid;
     place-items: center;
     gap: 0.5em;
-    background: #e5c06d;
+    background: $bg-yellow;
     border-radius: 3px;
     padding: 0.7em;
 

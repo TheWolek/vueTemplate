@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+    class="container col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
     id="landing"
   >
     <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -23,7 +23,7 @@ export default {
 .container {
   // width: 100%;
   height: 80vh;
-  background: lightgray;
+  background: $bg-light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,10 +36,10 @@ export default {
   padding: 0;
 
   header {
-    color: white;
+    color: $font-light;
     // width: 100%;
     padding: 0.7em;
-    background: rgba(0, 0, 0, 0.4);
+    background: $bg-blackGlass;
 
     h1 {
       font-size: 2.3rem;

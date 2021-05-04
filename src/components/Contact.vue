@@ -28,9 +28,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "/styles/common.scss";
+
 .container {
   height: 650px;
-  background: lightblue;
+  background: $bg-lightBlue;
   padding: 5em 1em 2em 1em;
   display: grid;
   grid-template-rows: 3fr 2fr;
@@ -83,7 +85,7 @@ export default {
 @media screen and (min-width: 1024px) {
   .container {
     grid-template-rows: 1fr;
-    grid-template-columns: 7% [left] 1fr [right] 2fr 10%;
+    grid-template-columns: 9% [left] 1fr [right] 2fr 19%;
     gap: 0;
     // column-gap: 1em;
     padding: 3em 2rem;
