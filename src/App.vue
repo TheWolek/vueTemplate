@@ -212,7 +212,7 @@ body {
 
       a {
         display: block;
-        font-size: clamp(1.4rem, 50%, 1.1rem);
+        font-size: 1.25rem;
         text-decoration: none;
       }
     }
