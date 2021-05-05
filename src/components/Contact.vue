@@ -1,36 +1,45 @@
 <template>
-  <section
-    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
-    id="contact"
-  >
-    <div class="mapContainer col-12 col-sm-12 col-md-12">
-      <iframe
-        width="600"
-        style="border:0"
-        loading="lazy"
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgQYZJXe2EEcREHmn1biW3Qw&zoom=14&key=AIzaSyA9DxaysegfoYFJUGnZixWWE09_L-7wg_0"
-      ></iframe>
-    </div>
-    <div class="textContainer col-12 col-sm-12 col-md-12">
-      <address>
-        <p>Firma Remontowa Częstochowa</p>
-        <p>Krótka 12</p>
-        <p>42-202 Częstochowa</p>
-        <p>Tel. 696911299</p>
-        <p>mail@example.com</p>
-      </address>
-    </div>
-  </section>
+  <div class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <section id="contact">
+      <div class="mapContainer col-12 col-sm-12 col-md-12">
+        <iframe
+          width="600"
+          style="border:0"
+          loading="lazy"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgQYZJXe2EEcREHmn1biW3Qw&zoom=14&key=AIzaSyA9DxaysegfoYFJUGnZixWWE09_L-7wg_0"
+        ></iframe>
+      </div>
+      <div class="textContainer col-12 col-sm-12 col-md-12">
+        <address>
+          <p>Firma Remontowa Częstochowa</p>
+          <p>Krótka 12</p>
+          <p>42-202 Częstochowa</p>
+          <p>Tel. 696911299</p>
+          <p>mail@example.com</p>
+        </address>
+      </div>
+    </section>
+    <ContactForm />
+  </div>
 </template>
 <script>
+import ContactForm from "./ContactForm";
+
 export default {
   name: "contact",
+  components: {
+    ContactForm,
+  },
 };
 </script>
 <style lang="scss" scoped>
 @import "/styles/common.scss";
 
 .container {
+  background: $bg-lightBlue;
+}
+
+section {
   height: 650px;
   background: $bg-lightBlue;
   padding: 5em 1em 2em 1em;
@@ -63,7 +72,7 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  section {
     grid-template-columns: 4% [center] 1fr 4%;
     gap: 0;
     row-gap: 1em;
@@ -83,7 +92,7 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
+  section {
     grid-template-rows: 1fr;
     grid-template-columns: 9% [left] 1fr [right] 2fr 19%;
     gap: 0;
