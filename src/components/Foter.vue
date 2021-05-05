@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="content">
-      <p>Remont</p>
+      <p>Firma Remontowa Częstochowa</p>
       <p>© Paweł Michalski</p>
     </div>
   </footer>

@@ -13,7 +13,7 @@
     </div>
     <div class="textContainer col-12 col-sm-12 col-md-12">
       <address>
-        <p>Remont</p>
+        <p>Firma Remontowa Częstochowa</p>
         <p>Krótka 12</p>
         <p>42-202 Częstochowa</p>
         <p>Tel. 696911299</p>
