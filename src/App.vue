@@ -4,8 +4,8 @@
       <img src="./assets/logo.png" />
       <div class="links">
         <a href="#landing" @click="animateScroll('landing')">Home</a>
-        <a href="#about" @click="animateScroll('about')">About</a>
-        <a href="#contact" @click="animateScroll('contact')">Contact</a>
+        <a href="#about" @click="animateScroll('about')">O nas</a>
+        <a href="#contact" @click="animateScroll('contact')">Kontakt</a>
       </div>
     </div>
     <div class="nav-mobile-container">
@@ -19,8 +19,8 @@
       </div>
       <div id="nav-mobile">
         <a href="#nav" @click="animateScroll('nav')">Home</a>
-        <a href="#about" @click="animateScroll('about')">About</a>
-        <a href="#contact" @click="animateScroll('contact')">Contact</a>
+        <a href="#about" @click="animateScroll('about')">O nas</a>
+        <a href="#contact" @click="animateScroll('contact')">Kontakt</a>
       </div>
     </div>
     <Landing></Landing>
