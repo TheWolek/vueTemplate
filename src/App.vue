@@ -109,8 +109,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 2px solid $font-dark;
-  border-top: 2px solid $font-dark;
+  border-bottom: 3px solid $border-yellow;
+  border-top: 2px solid $border-yellow;
   background: $font-light;
   transition: all 0.6s ease;
 
@@ -139,7 +139,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid $font-dark;
+  border-bottom: 3px solid $border-yellow;
 
   #hamburger {
     width: 40px;
@@ -189,7 +189,7 @@ body {
   background: white;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid $font-dark;
+  border-bottom: 3px solid $border-yellow;
 
   a {
     font-weight: bold;
