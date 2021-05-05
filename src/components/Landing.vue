@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
+    class="container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
     id="landing"
   >
     <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -22,18 +22,23 @@ export default {
 
 .container {
   // width: 100%;
-  height: 80vh;
+  // height: 80vh;
   background: $bg-light;
   display: flex;
   justify-content: center;
   align-items: center;
-  // color: rgb(180, 180, 180);
   color: $font-light;
-  background-image: url("https://alebank.pl/wp-content/uploads/2019/10/remont-mieszkanie-malowanie.jpg");
+  // background-image: url("https://alebank.pl/wp-content/uploads/2019/10/remont-mieszkanie-malowanie.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.43) 0%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    url(https://budmardesign.pl/wp-content/uploads/2019/09/interior-design-35.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 65%;
-  padding: 0;
+  background-position: center;
+  padding: 60% 0;
 
   header {
     color: $font-light;
@@ -56,6 +61,7 @@ export default {
 
 @media (min-width: 768px) {
   .container {
+    padding: 50% 0;
     header {
       padding: 3em;
       h1 {
@@ -75,9 +81,10 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .container {
-    background-position-y: center;
-    background-size: contain;
-    background-attachment: fixed;
+    // background-position-y: center;
+    background-size: cover;
+    // background-attachment: fixed;
+    padding: 17% 0;
     header {
       display: flex;
       flex-direction: column;
