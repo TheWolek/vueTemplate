@@ -3,6 +3,7 @@
     class="container col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
     id="about"
   >
+    <h1>Czym się zajmujemy:</h1>
     <section class="card">
       <div class="card-img">
         <img
@@ -46,6 +47,11 @@ export default {
   place-items: center;
   gap: 3em;
 
+  h1 {
+    // font-size: 1.5rem;
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
+  }
+
   .card {
     display: grid;
     place-items: center;
@@ -74,6 +80,12 @@ export default {
 @media screen and (min-width: 768px) {
   .container {
     grid-template-columns: 5% [center] 1fr [center_end] 5%;
+    grid-template-rows: 6rem 1fr;
+
+    h1 {
+      grid-column: center;
+    }
+
     .card {
       padding-top: 2em;
       padding-bottom: 1.5em;
@@ -102,12 +114,20 @@ export default {
     gap: 0;
     padding-bottom: 13em;
     padding-top: 13em;
+
+    h1 {
+      grid-column: 2 / span 2;
+      width: 100%;
+    }
+
     .card {
       width: 70%;
       grid-column: left;
+      grid-row: 2;
 
       &:nth-child(2) {
         grid-column: right;
+        grid-row: 2;
       }
 
       .card-img {
