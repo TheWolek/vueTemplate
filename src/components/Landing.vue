@@ -4,7 +4,7 @@
     id="landing"
   >
     <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <h1>Remont?</h1>
+      <h1>Firma remontowa Częstochowa</h1>
       <h4>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
         reprehenderit veritatis consectetur
@@ -47,14 +47,15 @@ export default {
     background: $bg-blackGlass;
 
     h1 {
-      font-size: 2.3rem;
+      // font-size: 1.8rem;
+      font-size: clamp(1.65rem, 4vw, 2.1rem);
     }
     h1 + * {
       margin-top: 0.4em;
     }
 
     h4 {
-      font-size: 1.2rem;
+      font-size: 1.05rem;
     }
   }
 }
@@ -64,9 +65,9 @@ export default {
     padding: 50% 0;
     header {
       padding: 3em;
-      h1 {
-        font-size: 3rem;
-      }
+      // h1 {
+      //   font-size: 2.5rem;
+      // }
 
       h4 {
         font-size: 1.4rem;
